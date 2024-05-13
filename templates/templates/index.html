@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upload the file : GFG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-lg mx-auto bg-white p-6 rounded shadow-md">
+      <h1 class="text-xl font-bold mb-4">Upload File:</h1>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="mb-4">
+          <label for="file" class="block font-medium">Choose your File</label>
+          <input type="file" name="file" id="file" class="mt-1 block w-full" />
+        </div>
+        <div class="mb-4">
+          <label for="job-role" class="block font-medium"
+            >Enter Job Profile</label
+          >
+          <input
+            type="text"
+            name="job-role"
+            id="job-role"
+            class="mt-1 block w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="skills" class="block font-medium"
+            >Enter comma separated skills</label
+          >
+          <input
+            type="text"
+            name="skills"
+            id="skills"
+            class="mt-1 block w-full"
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          Upload
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
